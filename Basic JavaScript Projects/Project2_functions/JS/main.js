@@ -10,3 +10,13 @@ function myFunction() {                                         //Declaring a fu
     sentence += " string!"                                      //adding to (concantenaing) the string
     document.getElementById("Concatenate").innerHTML = sentence; //using the getElementById method to display the sentence variable once the click happens
 }
+
+function getInfo() {                                            //Declaring a function
+    var data = 5 + 5;                                           //Declaring a variable with the sum of two numbers
+    document.getElementById("Sum").innerHTML = data;            //using the getElementById method to display the variable data which is the sum of the assigned two numbers 
+}
+
+function addition_Function() {                                          //declaring a function for math
+    var addition = 2 + 2;                                               //declaring a variable addition for the sum of 2 + 2
+    document.getElementById("Math").innerHTML = "2 + 2 = " + addition;  //using the get ElementById method to display the variable addition
+}
