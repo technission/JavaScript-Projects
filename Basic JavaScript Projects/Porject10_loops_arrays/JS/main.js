@@ -60,3 +60,13 @@ function continue_method() {                                                    
         document.getElementById("continue").innerHTML = text                                //displaying everything except the second loop through
     }
 }
+
+function run_loop() {                                                       //declaring a function with a while loop
+    var number = 1;                                                         //declaring a variable with a default value of 1
+    var text="";                                                            //declaring a variable to use for the output
+    while (number < 5) {                                                    //while loop for looping through while number is less than 5
+        text += "The number is " + number + "<br>";                         //adding a line of text each time the loop is ran until the condition is met
+        number++;                                                           //adding 1 to the value of number (incrementing)
+        document.getElementById("while_loop").innerHTML = text;             //displaying in the paragraph our output
+    }
+}
