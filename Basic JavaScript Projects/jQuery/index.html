@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <!-- This is the google api for jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <h2 id='banner'>Congrats you did</h2>\
+                            <button>Erase All</button>\
+                        </div>\
+                    </div>\
+                    </body>"
+            );
+            $("#2").css({"color":"red"});
+            $("#banner").click(function() {
+                //we are going to add a string to the end of the sentence in <h2>
+                $('h2').append(' it!')
+            });
+            $('button').click(function() {
+                //upon clicking the button it will erase all data on the page through the use of .hide()
+                $('p').hide();
+                $('h1').hide();
+                $('h2').hide();
+                $('button').hide();
+            });
+            $('#3').click(function() {
+                //this function will hide just the heading 1
+                $('h1').hide();
+            });
+        });
+    </script>
+	<body>
+
+	</body>	
+</html>
